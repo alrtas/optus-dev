@@ -5,6 +5,11 @@
   
   },
   "entryFulfillment": {
-  
+    "messages": [ {
+      "text": {
+        "text": [ "oh yes!" ]
+      },
+      "languageCode": "en"
+    } ]
   }
 }
