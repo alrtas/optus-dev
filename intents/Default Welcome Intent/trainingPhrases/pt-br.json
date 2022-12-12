@@ -1,0 +1,83 @@
+{
+  "trainingPhrases": [ {
+    "id": "6c2e74d4-171b-4f2d-b0b2-50252d5a0fbd",
+    "parts": [ {
+      "text": "há quanto tempo",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "4775e834-84b5-4ac8-b672-46f4ba9d2bf8",
+    "parts": [ {
+      "text": "olá",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "e48cd473-941b-4180-be2c-185be3dd38f4",
+    "parts": [ {
+      "text": "oi",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "1d701684-0142-4168-bc90-a79fbb2a9500",
+    "parts": [ {
+      "text": "opa",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "da639797-0869-480b-a72a-d50062cdf3b8",
+    "parts": [ {
+      "text": "fala aí",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "501bb71c-9703-4cab-b20c-a3568f466c50",
+    "parts": [ {
+      "text": "fala",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "84c75b7e-3d9b-4f03-9237-0fa3212d9461",
+    "parts": [ {
+      "text": "saudações",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "f35de8d3-c139-407b-b7a1-26de22eb9a1c",
+    "parts": [ {
+      "text": "oi tudo bem",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "7546d47c-bd42-40bb-960d-bb0a1a9210ca",
+    "parts": [ {
+      "text": "e aí",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "9a6105d7-07f9-40ac-9450-b2f23b5d3b40",
+    "parts": [ {
+      "text": "eae",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  } ]
+}

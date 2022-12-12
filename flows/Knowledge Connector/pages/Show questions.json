@@ -1,0 +1,15 @@
+{
+  "name": "97ddd4d1-349b-4b33-b21a-4d8b17b4b2ad",
+  "displayName": "Show questions",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$request.knowledge.questions[n]" ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

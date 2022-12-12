@@ -1,0 +1,115 @@
+{
+  "name": "e8099e11-39d1-4c74-9c19-873e49b690b3",
+  "displayName": "get_number",
+  "form": {
+    "parameters": [ {
+      "displayName": "phone_number",
+      "required": true,
+      "entityType": "@sys.number-sequence",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please provide your number" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "webhook": "webhook-parrot",
+      "tag": "default",
+      "setParameterActions": [ {
+        "parameter": "__webhook_parrot",
+        "value": {
+          "match_parameter": "phone_number",
+          "response_data": {
+            "000000": {
+              "response_code": 503
+            },
+            "123456": {
+              "response": {
+                "sessionInfo": {
+                  "parameters": {
+                    "first_name": "Alice",
+                    "last_name": "Garcia"
+                  }
+                }
+              }
+            },
+            "997744": {
+              "response": {
+                "sessionInfo": {
+                  "parameters": {
+                    "first_name": "Mario",
+                    "last_name": "Googler"
+                  }
+                }
+              }
+            }
+          }
+        }
+      } ]
+    },
+    "name": "16415f29-78cd-488d-92c0-f7b1b90841f4"
+  }, {
+    "condition": "$session.params.first_name != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "webhook-result",
+    "name": "62b95683-bbc7-4e89-9387-cbafc826f85a"
+  } ],
+  "eventHandlers": [ {
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "A webhook error occurred" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "92dae70d-f84d-4cc7-af30-af4050554ae8"
+  }, {
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The webhook timed out" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "72d4089c-64f4-4583-9099-c2f4a7625d99"
+  }, {
+    "event": "webhook.error.unavailable",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The webhook seems to be unavailable right now. Please try again later." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b2b2f9b0-f3e5-4fe4-80ac-4b3a155273ea"
+  }, {
+    "event": "webhook.error.bad-request",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "The webhook is rejecting your input. Please try adjusting your JSON and try again." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "c7709f71-bac2-4b97-afb1-0dc415123a6e"
+  } ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "0346b3a1-1977-4b1f-911b-7d6835822c60",
+  "displayName": "Merge",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "It will be available soon to other git plataforms as bitbucket" ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

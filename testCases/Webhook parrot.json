@@ -1,0 +1,94 @@
+{
+  "name": "a0596e61-3cb2-4586-83e6-80e325c5adbd",
+  "displayName": "Webhook parrot",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "webhook"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "webhook_parrot"
+      },
+      "currentPage": {
+        "name": "get_number",
+        "flow": "Webhook Parrot"
+      },
+      "textResponses": [ {
+        "text": [ "Please provide your number" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "997744"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "__webhook_parrot": {
+          "match_parameter": "phone_number",
+          "response_data": {
+            "000000": {
+              "response_code": 503
+            },
+            "123456": {
+              "response": {
+                "sessionInfo": {
+                  "parameters": {
+                    "first_name": "Alice",
+                    "last_name": "Garcia"
+                  }
+                }
+              }
+            },
+            "997744": {
+              "response": {
+                "sessionInfo": {
+                  "parameters": {
+                    "first_name": "Mario",
+                    "last_name": "Googler"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "__webhook_parrot_meta_contact_channel": "UNKNOWN",
+        "__webhook_parrot_meta_logs_url": "https://console.cloud.google.com/logs/query;query=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22webhook-parrot%22%0Aprojects%2Fet-ai-dev-virtual-agent%2Flocations%2Fglobal%2Fagents%2F73191a5a-0c1d-4384-964e-e59181d341d8%2Fsessions%2F742ea4-a1f-777-13d-7fd673914?project=cx-webhook-parrot",
+        "__webhook_parrot_meta_request_count": 1,
+        "__webhook_parrot_meta_returned_parameters": [ "last_name", "first_name" ],
+        "__webhook_parrot_meta_status": 200,
+        "first_name": "Mario",
+        "last_name": "Googler",
+        "phone_number": "997744"
+      },
+      "currentPage": {
+        "name": "webhook-result",
+        "flow": "Webhook Parrot"
+      },
+      "textResponses": [ {
+        "text": [ "Ahoy! This session is being assisted by 🦜 Webhook Parrot." ]
+      }, {
+        "text": [ "Webhook said your name is Mario" ]
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1670621238,
+    "nanos": 772787000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

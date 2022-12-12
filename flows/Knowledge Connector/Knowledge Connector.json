@@ -1,0 +1,51 @@
+{
+  "name": "1c6e3292-bb39-4320-81b1-14aac7c7ee79",
+  "displayName": "Knowledge Connector",
+  "transitionRoutes": [ {
+    "condition": "TRUE",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Show questions",
+    "name": "27bb4397-89e7-4ba0-8015-a2c8c4a68ac9"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b24aeab3-7192-45a1-a8b0-0ae506f4db48"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "af90b273-6675-4121-a9c5-244ea25eb0d3"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  },
+  "knowledgeConnectorSettings": {
+    "enabled": true,
+    "knowledgeBaseIds": [ "projects/et-ai-dev-virtual-agent/locations/global/knowledgeBases/MTI0NjQyNDQ2ODIxMzE1MDUxNTI" ],
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.knowledge.questions[n]", "$request.knowledge.answers[0]" ]
+        },
+        "languageCode": "en"
+      } ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "36527f84-14a9-4943-af19-e1d892d1fbc6",
+  "displayName": "webhook-result",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Webhook said your name is $session.params.first_name" ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

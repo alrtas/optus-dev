@@ -1,0 +1,97 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Olá!", "Oi!" ]
+        },
+        "languageCode": "pt-br"
+      }, {
+        "text": {
+          "text": [ "Hi! How are you doing?", "Hello! How can I help you?", "Good day! What can I do for you today?", "Greetings! How can I assist?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "teste",
+        "value": "oi"
+      } ]
+    },
+    "targetPage": "Page 1",
+    "name": "41b973bc-cb63-4243-a01e-7b68c8316379"
+  }, {
+    "intent": "knowledge_connector",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Good, let's test the new knowledge connector" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Knowledge Connector",
+    "name": "5228faec-0c59-493e-b7d3-e2f5ae874cdd"
+  }, {
+    "intent": "github_integration",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Github Integration",
+    "name": "229ece52-1b4c-4083-9bda-3231df38e507"
+  }, {
+    "intent": "webhook_parrot",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Webhook Parrot",
+    "name": "0463b7c3-20b1-41a7-95d4-65fd9a7d886e"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "12a6b9ef-6b4a-4ddf-bea2-69cad2c0a4d8"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      }, {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "900da256-3365-4e64-a0ec-7d82fa49e195"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  },
+  "knowledgeConnectorSettings": {
+    "enabled": true,
+    "knowledgeBaseIds": [ "projects/et-ai-dev-virtual-agent/locations/global/knowledgeBases/MTI0NjQyNDQ2ODIxMzE1MDUxNTI" ],
+    "triggerFulfillment": {
+    
+    }
+  }
+}
