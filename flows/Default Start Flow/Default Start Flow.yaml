@@ -1,0 +1,76 @@
+name: "00000000-0000-0000-0000-000000000000"
+display_name: "Default Start Flow"
+description: "A start flow created along with the agent"
+transition_routes:
+  - intent: "Default Welcome Intent"
+    trigger_fulfillment:
+      messages:
+        - text:
+            text:
+              - "Hi! How are you doing?"
+              - "Hello! How can I help you?"
+              - "Good day! What can I do for you today?"
+              - "Greetings! How can I assist?"
+          language_code: "en"
+        - text:
+            text:
+              - "Olá!"
+              - "Oi!"
+          language_code: "pt-br"
+    name: "41dd229e-e77e-4b6a-b13f-b643a59de288"
+event_handlers:
+  - event: "sys.no-match-default"
+    trigger_fulfillment:
+      messages:
+        - text:
+            text:
+              - "I didn't get that. Can you say it again?"
+              - "I missed what you said. What was that?"
+              - "Sorry, could you say that again?"
+              - "Sorry, can you say that again?"
+              - "Can you say that again?"
+              - "Sorry, I didn't get that. Can you rephrase?"
+              - "Sorry, what was that?"
+              - "One more time?"
+              - "What was that?"
+              - "Say that one more time?"
+              - "I didn't get that. Can you repeat?"
+              - "I missed that, say that again?"
+          language_code: "en"
+        - text:
+            text:
+              - "Lamento, mas não compreendi."
+              - "Desculpe, mas não compreendi."
+              - "Infelizmente, não captei o que deseja."
+              - "Não consegui compreender, desculpe."
+          language_code: "pt-br"
+    name: "5decb704-a714-4887-ac7a-710162bbb861"
+  - event: "sys.no-input-default"
+    trigger_fulfillment:
+      messages:
+        - text:
+            text:
+              - "I didn't get that. Can you say it again?"
+              - "I missed what you said. What was that?"
+              - "Sorry, could you say that again?"
+              - "Sorry, can you say that again?"
+              - "Can you say that again?"
+              - "Sorry, I didn't get that. Can you rephrase?"
+              - "Sorry, what was that?"
+              - "One more time?"
+              - "What was that?"
+              - "Say that one more time?"
+              - "I didn't get that. Can you repeat?"
+              - "I missed that, say that again?"
+          language_code: "en"
+        - text:
+            text:
+              - "Lamento, mas não compreendi."
+              - "Desculpe, mas não compreendi."
+              - "Infelizmente, não captei o que deseja."
+              - "Não consegui compreender, desculpe."
+          language_code: "pt-br"
+    name: "7e416c04-0d5f-4dad-bb8d-d14f3b1c4e8d"
+nlu_settings:
+  model_type: "MODEL_TYPE_STANDARD"
+  classification_threshold: 0.300000012
