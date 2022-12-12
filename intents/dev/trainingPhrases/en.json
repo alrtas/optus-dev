@@ -1,0 +1,25 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "dev branch",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "ved",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "dev",
+      "parameterId": "person",
+      "auto": true
+    } ],
+    "repeatCount": 2,
+    "languageCode": "en"
+  } ]
+}
