@@ -7,9 +7,17 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "$request.knowledge.questions[n]" ]
+        "text": [ "This is the first page" ]
       },
       "languageCode": "en"
     } ]
-  }
+  },
+  "transitionRoutes": [ {
+    "intent": "dev",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Other page",
+    "name": "23da1aee-5729-4ae7-8e73-e2fa5ed5d0d1"
+  } ]
 }
