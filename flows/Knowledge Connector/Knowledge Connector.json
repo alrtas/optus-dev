@@ -42,7 +42,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "$request.knowledge.questions[n]", "$request.knowledge.answers[0]" ]
+          "text": [ "$request.knowledge.answers[0]" ]
         },
         "languageCode": "en"
       } ]

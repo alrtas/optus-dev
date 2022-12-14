@@ -1,0 +1,15 @@
+{
+  "name": "fbfc7fe1-e6c2-4c5b-b8bc-ef1abb0bd9d4",
+  "displayName": "Other page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "This is other page" ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}
