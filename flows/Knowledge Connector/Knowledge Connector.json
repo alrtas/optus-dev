@@ -38,7 +38,7 @@
   },
   "knowledgeConnectorSettings": {
     "enabled": true,
-    "knowledgeBaseIds": [ "projects/et-ai-dev-virtual-agent/locations/global/knowledgeBases/MTI0NjQyNDQ2ODIxMzE1MDUxNTI" ],
+    "knowledgeBaseIds": [ "projects/et-ai-dev-virtual-agent/locations/global/knowledgeBases/MTI0NjQyNDQ2ODIxMzE1MDUxNTI", "projects/et-ai-dev-virtual-agent/locations/global/knowledgeBases/MTEwMzY2NTYzNzY4MTMxOTExNjg" ],
     "triggerFulfillment": {
       "messages": [ {
         "text": {
