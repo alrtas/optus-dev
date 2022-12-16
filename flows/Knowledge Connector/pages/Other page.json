@@ -7,9 +7,21 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "This is other page" ]
+        "text": [ "Thanks for the feedback, You can also make questions about 5g." ]
       },
       "languageCode": "en"
     } ]
+  },
+  "knowledgeConnectorSettings": {
+    "enabled": true,
+    "knowledgeBaseIds": [ "projects/et-ai-dev-virtual-agent/locations/global/knowledgeBases/MTM0NDA4MDQ1MjE2NDMwODE3Mjg" ],
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.knowledge.answers[0]" ]
+        },
+        "languageCode": "en"
+      } ]
+    }
   }
 }

@@ -1,23 +1,19 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
-      "text": "dev branch",
-      "auto": true
+      "text": "yes"
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "ved",
-      "auto": true
+      "text": "yep"
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "dev",
-      "parameterId": "person",
-      "auto": true
+      "text": "yeah"
     } ],
     "repeatCount": 2,
     "languageCode": "en"

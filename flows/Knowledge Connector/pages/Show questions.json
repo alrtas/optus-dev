@@ -7,13 +7,13 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "This is the first page" ]
+        "text": [ "That is a lovely flow, am I right?" ]
       },
       "languageCode": "en"
     } ]
   },
   "transitionRoutes": [ {
-    "intent": "dev",
+    "intent": "yes",
     "triggerFulfillment": {
     
     },
